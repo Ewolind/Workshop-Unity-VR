@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5a39398f633cf0b47be14cd7870169ca
-timeCreated: 1527078478
+guid: 4ebc9c7d0a7b32246bfcc37c203b2dc8
+timeCreated: 1527093850
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -12,6 +12,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Tronc
+    7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
   materials:
