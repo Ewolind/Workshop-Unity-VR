@@ -332,6 +332,8 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\EditorResources.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+    <Compile Include="Assets\PostProcessing\Utilities\Editor\FocusPullerEditor.cs" />
+    <Compile Include="Assets\PostProcessing\Utilities\Editor\PostProcessingControllerEditor.cs" />
     <Compile Include="Assets\VR\Oculus\AudioManager\Scripts\Audio\Editor\AudioImportPostProcessor.cs" />
     <Compile Include="Assets\VR\Oculus\AudioManager\Scripts\Audio\Editor\AudioManagerInspector.cs" />
     <Compile Include="Assets\VR\Oculus\AudioManager\Scripts\Audio\Editor\MinMaxPropertyDrawer.cs" />
