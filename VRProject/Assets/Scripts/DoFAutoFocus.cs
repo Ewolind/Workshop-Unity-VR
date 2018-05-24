@@ -73,14 +73,12 @@ public class DoFAutoFocus : MonoBehaviour
 
     void Focus()
     {
-        print("focus");
         // our ray
         Ray ray = transform.GetComponent<Camera>().ViewportPointToRay(new Vector3(0.5F, 0.5F, 0));
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, this.maxDistance, this.hitLayer))
         {
             Debug.DrawLine(ray.origin, hit.point);
-            print("first if");
             // do we have a new point?					
             if (this.lastDoFPoint == hit.point)
             {
@@ -96,11 +94,9 @@ public class DoFAutoFocus : MonoBehaviour
             }
             else
             {
-                print("update");
                 this.doFFocusTarget.transform.position = hit.point;
                 var depthOfField = m_Profile.depthOfField.settings;
                 depthOfField.focusDistance = Vector3.Distance(doFFocusTarget.transform.position, transform.position);
-                 print(depthOfField.focusDistance);
                 m_Profile.depthOfField.settings = depthOfField;
             }
             // asign the last hit
