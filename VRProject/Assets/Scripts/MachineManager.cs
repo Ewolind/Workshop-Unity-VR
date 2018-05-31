@@ -8,13 +8,17 @@ public class MachineManager : MonoBehaviour {
     private GameObject screen;
     private VideoPlayer screenPlayer;
     
-    
+    public VideoClip tempClip;
     public VideoClip snowscreen;
     private VideoClip currentMeme;
 
     void Start () {
         screen = this.gameObject.transform.GetChild(1).gameObject;
         screenPlayer = screen.GetComponent<VideoPlayer>();
+
+        //Temp
+        currentMeme = tempClip;
+        StartCoroutine(Delay());
     }
 	
 	void Update () {
